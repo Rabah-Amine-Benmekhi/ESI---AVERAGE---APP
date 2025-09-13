@@ -174,6 +174,7 @@ const sem2_1cs = () => {
 
 
 semester.addEventListener('click',function (){
+  resetdata();
     if (semester.innerHTML === "Go to semester 2"){
         sem2_1cs();
     }else {
@@ -227,7 +228,7 @@ const getdata = () => {
 
 }
 
-reset.addEventListener('click',() => {
+const resetdata = () => {
     localStorage.clear();
     osex.value = '';
     ostd.value = '';
@@ -246,11 +247,12 @@ reset.addEventListener('click',() => {
     elex.value = '';
     eltd.value = '';
     total.innerHTML = '';
-});
+}
+
+reset.addEventListener('click', resetdata);
 
 // cp1.addEventListener('click',sem1_1cp);
 
 
 
 getdata();
-
