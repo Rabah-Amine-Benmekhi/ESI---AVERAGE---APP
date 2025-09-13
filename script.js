@@ -27,7 +27,11 @@ const model_7 = document.getElementById('model-7');
 const model_8 = document.getElementById('model-8');
 const semester = document.getElementById('s1');
 const reset = document.getElementById('reset');
-
+const cp1 = document.getElementById('1cp');
+const cp2 = document.getElementById('2cp');
+const cs1 = document.getElementById('1cs');
+const cs2 = document.getElementById('2cs');
+const cs3 = document.getElementById('3cs');
 
 
  function calcaverage(){
@@ -42,7 +46,57 @@ const reset = document.getElementById('reset');
 
 btn.addEventListener('click',calcaverage);
 
-const sem1 = () => {
+// const sem1_1cp = () => {
+//     semester.innerHTML = 'Go to semester 2';
+    
+//    model_1.innerHTML = '';
+//    model_2.innerHTML = '';
+//    model_3.innerHTML = '';
+//    model_4.innerHTML = 'algorithmes';
+//    model_5.innerHTML = '';
+//    model_6.innerHTML = '';
+//    model_7.innerHTML = '';
+//    model_8.innerHTML = '';
+// }
+
+// const sem2_1cp = () => {
+//     semester.innerHTML = 'Go to semester 1';
+
+//    model_1.innerHTML = '';
+//    model_2.innerHTML = 'Networking 2';
+//    model_3.innerHTML = '';
+//    model_4.innerHTML = 'Analysis and Design of Information Systems';
+//    model_5.innerHTML = 'Web Languages and Tools';
+//    model_6.innerHTML = 'Introduction to Computer Security';
+//    model_7.innerHTML = 'Project Management';
+//    model_8.innerHTML = 'English Language 2';
+// }
+// const sem1_2cp = () => {
+//     semester.innerHTML = 'Go to semester 2';
+    
+//    model_1.innerHTML = 'Operating Systems 1';
+//    model_2.innerHTML = 'Networking';
+//    model_3.innerHTML = 'Introduction to software Engineering';
+//    model_4.innerHTML = 'Databases';
+//    model_5.innerHTML = 'Language Theory';
+//    model_6.innerHTML = 'Numerical Analysis';
+//    model_7.innerHTML = 'Operational Research';
+//    model_8.innerHTML = 'English Language 1';
+// }
+
+// const sem2_2cp = () => {
+//     semester.innerHTML = 'Go to semester 1';
+
+//    model_1.innerHTML = 'Operating Systems 2';
+//    model_2.innerHTML = 'Networking 2';
+//    model_3.innerHTML = 'Advanced Computer Architecture';
+//    model_4.innerHTML = 'Analysis and Design of Information Systems';
+//    model_5.innerHTML = 'Web Languages and Tools';
+//    model_6.innerHTML = 'Introduction to Computer Security';
+//    model_7.innerHTML = 'Project Management';
+//    model_8.innerHTML = 'English Language 2';
+// }
+const sem1_1cs = () => {
     semester.innerHTML = 'Go to semester 2';
     
    model_1.innerHTML = 'Operating Systems 1';
@@ -55,7 +109,7 @@ const sem1 = () => {
    model_8.innerHTML = 'English Language 1';
 }
 
-const sem2 = () => {
+const sem2_1cs = () => {
     semester.innerHTML = 'Go to semester 1';
 
    model_1.innerHTML = 'Operating Systems 2';
@@ -67,12 +121,63 @@ const sem2 = () => {
    model_7.innerHTML = 'Project Management';
    model_8.innerHTML = 'English Language 2';
 }
+// const sem1_2cs = () => {
+//     semester.innerHTML = 'Go to semester 2';
+    
+//    model_1.innerHTML = 'Operating Systems 1';
+//    model_2.innerHTML = 'Networking';
+//    model_3.innerHTML = 'Introduction to software Engineering';
+//    model_4.innerHTML = 'Databases';
+//    model_5.innerHTML = 'Language Theory';
+//    model_6.innerHTML = 'Numerical Analysis';
+//    model_7.innerHTML = 'Operational Research';
+//    model_8.innerHTML = 'English Language 1';
+// }
+
+// const sem2_2cs = () => {
+//     semester.innerHTML = 'Go to semester 1';
+
+//    model_1.innerHTML = 'Operating Systems 2';
+//    model_2.innerHTML = 'Networking 2';
+//    model_3.innerHTML = 'Advanced Computer Architecture';
+//    model_4.innerHTML = 'Analysis and Design of Information Systems';
+//    model_5.innerHTML = 'Web Languages and Tools';
+//    model_6.innerHTML = 'Introduction to Computer Security';
+//    model_7.innerHTML = 'Project Management';
+//    model_8.innerHTML = 'English Language 2';
+// }
+// const sem1_3cs = () => {
+//     semester.innerHTML = 'Go to semester 2';
+    
+//    model_1.innerHTML = 'Operating Systems 1';
+//    model_2.innerHTML = 'Networking';
+//    model_3.innerHTML = 'Introduction to software Engineering';
+//    model_4.innerHTML = 'Databases';
+//    model_5.innerHTML = 'Language Theory';
+//    model_6.innerHTML = 'Numerical Analysis';
+//    model_7.innerHTML = 'Operational Research';
+//    model_8.innerHTML = 'English Language 1';
+// }
+
+// const sem2_3cs = () => {
+//     semester.innerHTML = 'Go to semester 1';
+
+//    model_1.innerHTML = 'Operating Systems 2';
+//    model_2.innerHTML = 'Networking 2';
+//    model_3.innerHTML = 'Advanced Computer Architecture';
+//    model_4.innerHTML = 'Analysis and Design of Information Systems';
+//    model_5.innerHTML = 'Web Languages and Tools';
+//    model_6.innerHTML = 'Introduction to Computer Security';
+//    model_7.innerHTML = 'Project Management';
+//    model_8.innerHTML = 'English Language 2';
+// }
+
 
 semester.addEventListener('click',function (){
     if (semester.innerHTML === "Go to semester 2"){
-        sem2();
+        sem2_1cs();
     }else {
-        sem1();
+        sem1_1cs();
     }
 })
 
@@ -142,5 +247,9 @@ reset.addEventListener('click',() => {
     eltd.value = '';
     total.innerHTML = '';
 });
+
+// cp1.addEventListener('click',sem1_1cp);
+
+
 
 getdata();
