@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+     <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Average App</title>
+</head>
+<body>
+     
+<div class="container">
+   <div class="average-app">
+    <div class="title">
+        <h1>Calculate your 1cs average</h1>
+    </div>
+    <div class="average">
+        <table>
+            <thead>
+                <tr>
+                    <th>models</th>
+                    <th>Exam</th>
+                    <th>Td</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="model-1">Operating Systems 1</td>
+                    <td><input type="number" class="osex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="ostd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+    
+                <tr>
+                    <td id="model-2">Networking 1</td>
+                    <td><input type="number" class="ntex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="nttd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+                <tr>
+                    <td id="model-3">Introduction to software Engineering</td>
+                    <td><input type="number" class="iseex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="isetd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+                <tr>
+                    <td id="model-4">Databases</td>
+                    <td><input type="number" class="dbex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="dbtd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+                <tr>
+                    <td id="model-5">Language Theory</td>
+                    <td><input type="number" class="ltex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="lttd" min="0" max="20" maxlength="2" step="0.25" required ></td>
+                </tr>
+                <tr>
+                    <td id="model-6">Numerical Analysis </td>
+                    <td><input type="number" class="naex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="natd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+                <tr>
+                    <td id="model-7">Operational Research</td>
+                    <td><input type="number" class="orex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="ortd" min="0" max="20" maxlength="2" step="0.25" required></td>
+                </tr>
+                <tr>
+                    <td id="model-8">English Language 1</td>
+                    <td><input type="number" class="elex" min="0" max="20" maxlength="2" step="0.25" required></td>
+                    <td><input type="number" class="eltd" min="0" max="20" maxlength="2" step="0.25"required></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Average</td>
+                    <td colspan="2" class="Total"></td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </div>
+    <button class="btn">calculate average</button>
+        <button id="s1">Go to semester 2</button>
+        <button id="reset">Reset Data</button>
+   </div>
+</div>
+<!-- Script -->
+ <script src="script.js"></script>
+</body>
+</html>

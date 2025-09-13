@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* Utility classes */
+
+ 
+button {
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      padding: 15px;
+      transition: all 0.7s;
+}
+
+body {
+    background: url('bg.jpg') center/cover;
+    color: #fff;
+}
+
+.container {
+       
+      width: 800px;
+      min-height: 100vh;
+      margin: auto;
+}
+
+.container .title {
+    text-align: center;
+}
+
+.container .average {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container .average table .Total {
+    text-align: center;
+}
+.container .average table input {
+    width :200px;
+}
+
+tr {
+    padding: 20px;
+}
+.btn {
+    background-color: purple;
+    margin: 30px 0 30px 120px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(73, 6, 196);
+   
+}
+
+#s1 {
+    margin-left: 120px;
+}
+
+#s2 {
+    margin-left: 20px;
+}
+
+#reset {
+   margin-left: 20px;
+   background-color: red;
+ }
