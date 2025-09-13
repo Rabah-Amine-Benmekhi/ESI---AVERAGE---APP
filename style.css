@@ -24,7 +24,7 @@ header {
 }
 
 body {
-    /* background: url('bg.jpg') center/cover; */
+    background: url('bg.jpg') center/cover;
     color: #fff;
     font-family: "Oswald", sans-serif;
     
@@ -57,7 +57,7 @@ nav .nav ul li a {
 }
 
 .container {
-        background-color: red;
+      
       width: 90% ;
       min-height: 100vh;
       margin: auto;
